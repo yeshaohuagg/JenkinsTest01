@@ -4,6 +4,10 @@ buildscript {
     
     repositories {
         google()
+        mavenCentral()
+        maven {
+            url "https://jcenter.bintray.com"
+        }
         jcenter()
     }
     dependencies {
@@ -14,7 +18,13 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+repositories {
+    google()
+    jcenter()
+    maven {
+        url "https://jcenter.bintray.com"
+    }
+}
 allprojects {
     repositories {
         google()
